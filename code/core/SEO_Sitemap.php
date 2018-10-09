@@ -91,7 +91,7 @@ class SEO_Sitemap
     private function getSitemapFilters()
     {
         $filters = [
-            'ClassName:not' => 'ErrorPage',
+            'ClassName:not' => ['ErrorPage', 'RedirectorPage'],
             'Robots:not'    => 'noindex,nofollow',
             'SitemapHide'   => 0
         ];
