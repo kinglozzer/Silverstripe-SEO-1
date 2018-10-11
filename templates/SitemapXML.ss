@@ -8,7 +8,7 @@
     <loc>{$Host}$Link</loc>
     <lastmod>$LastEdited.Format('c')</lastmod>
     <changefreq>$ChangeFrequency</changefreq>
-    <priority>$Priority</priority>
+    <priority><% if $Priority %>$Priority<% else %>0<% end_if %></priority>
 
     <% loop $SitemapImages %>
     
